@@ -106,7 +106,8 @@
           subsecuencia “DD”.
         </h3>
         <div class="answer">
-          Mi respuesta a esta pregunta se encuentra en: /Codigo/Scrabble.py
+          Mi respuesta a esta pregunta se encuentra en: 
+          <a href="https://github.com/acs89/tarea1-git/blob/gh-pages/Codigo/Scrabble.py" target ="blank"> /Codigo/Scrabble.py </a>
         </div>
       </article>
       <article id="q3">
@@ -116,7 +117,40 @@
           repo', 'dirty working tree' y 'merge conflict'.
         </h3>
         <div class="answer">
-          Coloca tus respuestas aquí.
+         <b>Working Directory</b> <br>
+               <p>
+               El directorio de trabajo contiene los archivos de una versión del proyecto en el cual se está trabajando, 
+               estos archivos se pueden utilizar y modificar. En otras palabras, es el directorio donde se hizo checkout del repositorio que se 
+               encuentra en Git o la carpeta donde se creó un repositorio local.
+               </p><br>
+         <b>Index</b> <br>
+               <p>
+               El index es un archivo binario que representa un árbol de trabajo que contiene una lista de rutas (paths) y los nombres de 
+               los objetos asociados a las mismas. La funcionalidad del index es describir los archivos que se quieren guardar (commit) al repositorio en Git. 
+               El index también es conocido como el staging area entre el directorio de trabajo y el repositorio en Git. 
+               </p><br>
+         <b>Local Repository</b> <br>
+               <p>
+               El repositorio local consiste de tres arboles que son mantenidos por Git: directorio de trabajo, index y head. 
+               El primero es el directorio donde se encuentran los archivos del proyecto, el segundo es un archivo que describe los archivos a commit 
+               (agregar al repositorio en Git) y el tercero apunta al último commit que se realizó.
+               </p> <br>
+         <b>Remote Repository</b> <br>
+               <p>
+               El repositorio remoto es el repositorio que se encuentra en un servidor remoto de Git. La utilidad de un repositorio remoto 
+               es que se puede utilizar para la colaboración de proyectos. Varias personas pueden hacer una copia del proyecto que está en Git a 
+               un repositorio local.
+               </p><br>
+         <b>Dirty Working Tree</b> <br>
+               <p>
+               Un árbol de trabajo sucio es cuando existen modificaciones locales al directorio de trabajo que aún no han sido committed.  
+               </p><br>
+         <b>Merge Conflict</b> <br>
+               <p>
+               Un conflicto de merge surge cuando existe un problema al tratar de mezclar dos ramas (branches) y Git no puede juntar correctamente 
+               los cambios hechos a uno o varios archivos, ya que fueron modificados en la misma parte en ambas ramas. Para resolver los conflictos de merge, 
+               la persona encargada del merge debe manualmente elegir cuáles líneas de código debe contener el archivo. 
+               </p><br>
         </div>
       </article>
       <article id="q4">
@@ -146,42 +180,42 @@
             <tbody>
               <tr>
                 <th scope="row">working dir</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th scope="row">index</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>R/W</td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th scope="row">local repo</th>
+                <td>R</td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td>W</td>
                 <td></td>
+                <td>R/W</td>
+              </tr>
+              <tr>
+                <th scope="row">index</th>
+                <td>R</td>
+                <td></td>
+                <td>W</td>
+                <td>R/W</td>
                 <td></td>
                 <td></td>
+                <td>W</td>
+              </tr>
+              <tr>
+                <th scope="row">local repo</th>
+                <td>R</td>
+                <td>W</td>
+                <td></td>
+                <td>W</td>
+                <td>W</td>
+                <td>R</td>
+                <td>W</td>
               </tr>
               <tr>
                 <th scope="row">remote repo</th>
                 <td></td>
+                <td>R</td>
                 <td></td>
                 <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>R</td>
+                <td>W</td>
                 <td></td>
               </tr>
             </tbody>
